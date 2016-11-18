@@ -17,6 +17,6 @@ get ('/input') do
     @partial = false
   end
 
-  @result = params.fetch('string').word_count(@input_word, @partial))
+  @result = params.fetch('string').word_count(@input_word, @partial)
   erb(:index)
 end
