@@ -1,0 +1,30 @@
+
+
+  <form action="/input">
+    <div class="form-group">
+      <label for="string">Enter a string:</label>
+      <textarea id="string" type="text" name="string" class="form-control" rows="3"></textarea>
+      <!-- <label for="string">Enter a string:</label>
+      <input id="string" type="text" name="string" class="form-control"> -->
+    </div>
+    <div class="form-group">
+      <label for="word-to-count">Enter a word to count:</label>
+      <input id="word-to-count" type="text" name="word-to-count" class="form-control">
+    </div>
+
+    <div class="radio">
+      <label>
+        <input type="radio" id="true" name="partial-match" value="true" checked>
+        Include partial word matches-eg <em>java</em> and <em>java</em>script
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" id="false" name="partial-match" value="false">
+        Only include whole word matches
+      </label>
+    </div>
+    <button type="submit" class="btn-primary btn">Go</button>
+  </form>
+
+  <h1>The word: "<%= @input_word %>" appears <%= @result %> times in your text</h1>
