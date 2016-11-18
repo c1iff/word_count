@@ -1,26 +1,25 @@
 
-
-  <form action="/input">
-    <div class="form-group">
-      <label for="string">Enter a string:</label>
-      <textarea id="string" type="text" name="string" class="form-control" rows="3"></textarea>
-      <!-- <label for="string">Enter a string:</label>
-      <input id="string" type="text" name="string" class="form-control"> -->
-    </div>
-    <div class="form-group">
-      <label for="word-to-count">Enter a word to count:</label>
-      <input id="word-to-count" type="text" name="word-to-count" class="form-control">
-    </div>
-
-    <label class="checkbox" for="checkbox2">
-
-        <input type="checkbox" value="" id="true" data-toggle="checkbox" checked>
-
+<h3>Enter some text and find the number of occurences of a word</h3>
+<form action="/input">
+  <div class="form-group">
+    <label for="string"></label>
+    <textarea id="string" type="text" name="string" class="form-control" rows="5" placeholder="Paste your text here"></textarea>
+    <!-- <label for="string">Enter a string:</label>
+    <input id="string" type="text" name="string" class="form-control"> -->
+  </div>
+  <div class="form-inline">
+    <label for="word-to-count">Your word:</label>
+    <input id="word-to-count" type="text" name="word-to-count" class="form-control" placeholder="Enter a word to count here">
+  </div>
+  <div class="form-group">
+  <label class="checkbox" for="checkbox">
+      <input name="partial-match" type="checkbox" value="" id="true"  checked>
         Include partial word matches-eg <em>java</em> and <em>java</em>script
+  </label>
+  </div>
 
-    </label>
 
-    <button type="submit" class="btn btn-primary btn-lg">Go</button>
-  </form>
+  <button type="submit" class="btn btn-primary btn-lg">Go</button>
+</form>
 
-  <h1>The word: "<%= @input_word %>" appears <%= @result %> times in your text</h1>
+<h1>The word: "<%= @input_word %>" appears <%= @result %> times in your text</h1>
