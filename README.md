@@ -12,7 +12,8 @@ This app lets the user input text and then find the number of occurrences of a w
 ## Setup/Installation Requirements
 
 * clone github repository
-* or go to c1iff.github.io/word_count
+* on heroku: https://powerful-hamlet-91609.herokuapp.com/
+
 
 ##Specifications
 
