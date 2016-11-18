@@ -3,11 +3,14 @@
 
 }
 
-h1 {
+h3 {
   text-align: center;
 }
 
+#word-to-count{
+  width: 25%;
 
+}
 
 
 .btn {
