@@ -12,19 +12,15 @@
       <input id="word-to-count" type="text" name="word-to-count" class="form-control">
     </div>
 
-    <div class="radio">
-      <label>
-        <input type="radio" id="true" name="partial-match" value="true" checked>
+    <label class="checkbox" for="checkbox2">
+
+        <input type="checkbox" value="" id="true" data-toggle="checkbox" checked>
+
         Include partial word matches-eg <em>java</em> and <em>java</em>script
-      </label>
-    </div>
-    <div class="radio">
-      <label>
-        <input type="radio" id="false" name="partial-match" value="false">
-        Only include whole word matches
-      </label>
-    </div>
-    <button type="submit" class="btn-primary btn">Go</button>
+
+    </label>
+
+    <button type="submit" class="btn btn-primary btn-lg">Go</button>
   </form>
 
   <h1>The word: "<%= @input_word %>" appears <%= @result %> times in your text</h1>
